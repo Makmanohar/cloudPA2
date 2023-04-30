@@ -94,8 +94,6 @@ testErr = labelsAndPredictions.filter(
     lambda lp: lp[0] != lp[1]).count() / float(test.count())    
 print('Test Error = ' + str(testErr))
 
-#save training model
-RFmodel.save(sc, 's3://winequal/trainingmodel.model')
 
 
 
