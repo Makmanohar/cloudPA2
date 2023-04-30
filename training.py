@@ -97,3 +97,5 @@ print('Test Error = ' + str(testErr))
 
 
 
+#save training model
+RFmodel.save(sc, 's3://winequal/trainingmodel.model')
